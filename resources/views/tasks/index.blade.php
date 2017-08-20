@@ -11,5 +11,7 @@
             @endforeach
         </ul>
     @endif
+    <h1>タスクの新規作成</h1>
+     {!! link_to_route('tasks.create', '新規作成ページへのリンク', ['id' => $task->id]) !!}
 
 @endsection

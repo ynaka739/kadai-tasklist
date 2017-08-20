@@ -80,7 +80,7 @@ class TasksController extends Controller
     {
         $task = Task::find($id);
 
-        return view('messages.edit', [
+        return view('tasks.edit', [
             'task' => $task,
         ]);
     }
